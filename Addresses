@@ -1,0 +1,170 @@
+ROPSTEN
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'FakeETHPriceProvider'
+   --------------------------------
+   > transaction hash:    0x99480c6dfeb67360320e88f73e73d22dc5c08800a8227457563f1ac2cb73d855
+   > Blocks: 5            Seconds: 117
+   > contract address:    0x44f3c6B515526FDE7EB24035d1fD0dD686eAB0b9
+   > block number:        9864746
+   > block timestamp:     1616147100
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.95727038732
+   > gas used:            303930 (0x4a33a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0060786 ETH
+
+
+   Deploying 'FakeUSDC'
+   --------------------
+   > transaction hash:    0xf61c20b1c3ac02334d672ab567499e4ddecc8cb794e762c6d10ef6e4f2f29fe8
+   > Blocks: 6            Seconds: 56
+   > contract address:    0x081569340696E2ea50C56C7536460B0Bcb859A31
+   > block number:        9864753
+   > block timestamp:     1616147168
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.94211468732
+   > gas used:            757785 (0xb9019)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0151557 ETH
+
+
+   Deploying 'FakeWETH'
+   --------------------
+   > transaction hash:    0xd0af7d8bf91562e31bb2b70ace5575dafada8b2240829dfd8ac72842cef1baa4
+   > Blocks: 8            Seconds: 84
+   > contract address:    0xD5637ec44Ca0Ec0916c54950fa4e798E94CfaB4B
+   > block number:        9864762
+   > block timestamp:     1616147260
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.92695922732
+   > gas used:            757773 (0xb900d)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01515546 ETH
+
+
+   Deploying 'FakeHEGIC'
+   ---------------------
+   > transaction hash:    0x5f4307ee44305a0f5b089633ed5b3e20c75b1d2679acb1a5a4b14e427e209129
+   > Blocks: 5            Seconds: 44
+   > contract address:    0xA984B2DDF2A6eB63DB5d9dCF50409eC041c9C612
+   > block number:        9864768
+   > block timestamp:     1616147305
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.91180320732
+   > gas used:            757801 (0xb9029)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01515602 ETH
+
+
+   Deploying 'WETHPool'
+   --------------------
+   > transaction hash:    0xcb47c079bb62d72ee24f92c60131a8e8649cefaf76680dca066c8230e301d163
+   > Blocks: 4            Seconds: 44
+   > contract address:    0xD8fE7869fAB75E8E389B9B5C8C608DcC14077E74
+   > block number:        9864773
+   > block timestamp:     1616147351
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.85018174732
+   > gas used:            3081073 (0x2f0371)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06162146 ETH
+
+
+   Deploying 'USDCPool'
+   --------------------
+   > transaction hash:    0x89383a1e47271cbc0e0f8807a2423ad1f4cde70f7edd7f9e7c9544255316d295
+   > Blocks: 6            Seconds: 48
+   > contract address:    0x59104B129377cDB2C8B7D3b56746Fe5dd0957D51
+   > block number:        9864779
+   > block timestamp:     1616147404
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.78856028732
+   > gas used:            3081073 (0x2f0371)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06162146 ETH
+
+
+   Deploying 'WETHStaking'
+   -----------------------
+   > transaction hash:    0x64ca5d13d2340491d85a2363fdbc708198e60cbd2e12a32acaa639447224dda8
+   > Blocks: 5            Seconds: 36
+   > contract address:    0x9e3B3430E97bfdced426435BA3f2dE0DB3157B86
+   > block number:        9864784
+   > block timestamp:     1616147444
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.75785876732
+   > gas used:            1535076 (0x176c64)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03070152 ETH
+
+
+   Deploying 'USDCStaking'
+   -----------------------
+   > transaction hash:    0x037da89cfff5cd4564cb87af1af9f8017695d11f950bbbd0f7477287d25dd8b2
+   > Blocks: 6            Seconds: 48
+   > contract address:    0x562023140cE918b2c8AcA06dEC5363ead2001D2E
+   > block number:        9864791
+   > block timestamp:     1616147508
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.72715724732
+   > gas used:            1535076 (0x176c64)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03070152 ETH
+
+
+   Deploying 'PriceCalculator'
+   ---------------------------
+   > transaction hash:    0xd3f2a8ad4c0c662e0a978d29a2caf8e133154b21635f7aea204a2135c9d40057
+   > Blocks: 5            Seconds: 60
+   > contract address:    0x81Bb9D6747eB20f7427A3e19049B7F8E3FD4190f
+   > block number:        9864796
+   > block timestamp:     1616147564
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.71064694732
+   > gas used:            825515 (0xc98ab)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0165103 ETH
+
+
+   Deploying 'HegicOptions'
+   ------------------------
+   > transaction hash:    0x85c9cea855dc2457e44f4f55c2e6c1478ed48a38dbec1aea3dc768f6163eef69
+   > Blocks: 5            Seconds: 32
+   > contract address:    0x163E2BC3c01C650b39bcc1CE6d89af1F4C87246c
+   > block number:        9864801
+   > block timestamp:     1616147607
+   > account:             0xd5D51Def0D6496cd939B1AcD0Ae00b0080be0cC5
+   > balance:             3.63891730732
+   > gas used:            3586482 (0x36b9b2)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07172964 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.32443168 ETH
+
+
+Summary
+=======
+> Total deployments:   10
+> Final cost:          0.32443168 ETH

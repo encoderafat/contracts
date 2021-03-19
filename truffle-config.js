@@ -1,7 +1,10 @@
-const HDWalletProvider = require("@truffle/hdwallet-provider")
-const infuraKey = "a6fbe259558b4c8baf936d949d3d310d" // public unprotected key
-const pk = [process.env.PK]
-const coinmarketcap = process.env.CMC_P
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+const fs = require('fs');
+const infuraKey = fs.readFileSync(".infura").toString().trim();//"a6fbe259558b4c8baf936d949d3d310d" // public unprotected key
+const pk = fs.readFileSync(".secret").toString().trim();
+//const pk = [process.env.PK]
+//const coinmarketcap = process.env.CMC_P
+console.log(infuraKey)
 
 module.exports = {
   networks: {
@@ -28,10 +31,11 @@ module.exports = {
     },
     ropsten: {
       provider: () =>
-        new HDWalletProvider(pk, `https://ropsten.infura.io/v3/${infuraKey}`),
+        new HDWalletProvider(pk, `wss://ropsten.infura.io/ws/v3/${infuraKey}`),
       network_id: 3, // Ropsten's id
       // gas: 7000000,        // Ropsten has a lower block limit than mainnet
       // confirmations: 1,    // # of confs to wait between deployments. (default: 0)
+      networkCheckTimeout: 10000000,
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
     },
@@ -49,15 +53,6 @@ module.exports = {
   plugins: ["solidity-coverage"],
 
   // Set default mocha options here, use special reporters etc.
-  mocha: {
-    slow: 10000,
-    reporter: "eth-gas-reporter",
-    reporterOptions: {
-      excludeContracts: ["Migrations"],
-      currency: "USD",
-      coinmarketcap,
-    },
-  },
 
   // Configure your compilers
   compilers: {

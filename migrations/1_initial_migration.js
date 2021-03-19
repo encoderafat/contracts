@@ -27,7 +27,7 @@ const params = {
 }
 
 module.exports = async function (deployer, network, [account]) {
-  if (["development", "develop", "soliditycoverage"].indexOf(network) >= 0) {
+  if (["development", "develop", "soliditycoverage", "ropsten", "rinkeby"].indexOf(network) >= 0) {
     await deployer.deploy(ETHPriceProvider, params.ETHPrice)
 
     await deployer.deploy(USDC)
